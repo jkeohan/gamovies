@@ -1,10 +1,13 @@
 # MOVIE SEARCH
 
+Although this project did not incorpate the node\expess backend inital template provided I did manage to resolve the errors within the server.js.
+
 #### This project was developed using the following libraries:
 * Angular 1.0
 * Firebase
 * jQuery
 * Bootstrap
+* Surge.sh (used to deploy application)
 
 #### More About These Technologies
 
@@ -17,4 +20,9 @@ Additional Angular functionality that was leveraged was using the **$http** serv
 
 Although there are several other frameworks to choose from, such as Ember and Backbone, I think Angluar has positioned itself well and has made many improvements in Angular 2.0
 
+####Additional References
 
+The following references were used to help implement\troubleshoot the project:
+
+* [Save and Query Firebase Data](https://howtofirebase.com/save-and-query-firebase-data-ed73fb8c6e3a#.omxqan876)
+* [Deploying to Surge.sh](https://surge.sh/help/remembering-a-domain)
