@@ -1,0 +1,20 @@
+{
+  "name": "wdi-instructor-angular",
+  "homepage": "https://github.com/jkeohan/jsd920_class_repo",
+  "authors": [
+    "Joe Keohah <jkeohan@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

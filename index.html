@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Movies</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Normalize.css -->
+      <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+      <!-- Boilerplate.css -->
+      <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+      <!-- Custom -->
+      <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body ng-cloak ng-app="movieApp" ng-controller="movieCtrl">
+        <header>
+          <section class="container">
+            <a href="#"><h1>Movies</h1></a>
+            <nav>
+              <section id="search">
+                <input ng-model="searchInput" type="text" name="name" value="">
+                <a ng-click="doSearch(searchInput)"href="#"><img src="images/search.png" alt="" /></a>
+              </section>
+            </nav>
+            <div class="clearfix"></div>
+          </section>
+        </header>
+
+        <div id="popUp" class="loader hidden">
+          <a href="#" ng-click="closePopUp()" class="closePopUp">X</a>
+          <div class="container">
+            <h1>Article title here</h1>
+            <span>Year: <span class="year"></span></span>
+            <p>
+              Looking for secondary API to pull additional info
+            </p>
+            <a href="#" class="popUpAction" target="_blank">Read More (WIP) </a>
+          </div>
+        </div>
+
+        <section id="main" class="container"> 
+        <h1 >Here are the results for: <span class="results">Star Wars</span></h1>
+         <article class="article" ng-repeat="item in movieSources">
+              <section <a 
+              ng-click="overlay(item)" 
+              id="{{item.imdbID}}" class="featuredImage">
+                <img src="{{item.Poster}}" alt="{{item.Title}}" />
+              </section>
+              <section class="articleContent">
+                  <a href="#" id="{{id}}"><h3>{{item.Title}}</h3></a>
+              </section>
+              <section class="impressions">
+              <p><span>LIKES:</span> <span class="likes">{{item.votes}}</span>
+                <i id="up" class="fa fa-thumbs-up pull-right"></i>
+                <i id="down" class="fa fa-thumbs-down pull-right"></i>
+              </p>
+              </section>
+              <div class="clearfix"></div>
+            </article> 
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- FIREBASE -->
+        <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+        <!-- FIREBASE INIT -->
+        <script src="js/keys.js"></script>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Anuglar -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <!-- Custom App -->
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
