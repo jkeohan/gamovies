@@ -13,6 +13,6 @@ These libraries lend themselves quite useful when building out an application.  
 * 1 angular app (movieApp)
 * 1 angular controller (movieCtrl)
 
-Additional Angular functionality that was leveraged was using the $http service to make the ajax calls and $scope to extend the scope of variables and functions so they can be called directly from the HTML.
+Additional Angular functionality that was leveraged was using the **$http** service to make the ajax calls and **$scope** to extend the scope of variables and functions so they can be called directly from the HTML.
 
 
