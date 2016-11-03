@@ -15,4 +15,6 @@ These libraries lend themselves quite useful when building out an application.  
 
 Additional Angular functionality that was leveraged was using the **$http** service to make the ajax calls and **$scope** to extend the scope of variables and functions so they can be called directly from the HTML.
 
+Although there are several other frameworks to choose from, such as Ember and Backbone, I think Angluar has positioned itself well and has made many improvements in Angular 2.0
+
 
