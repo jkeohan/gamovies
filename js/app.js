@@ -124,10 +124,13 @@ movieApp.controller('movieCtrl',['$scope','$http',function($scope,$http){
       $('#popUp').removeClass()
       $('#popUp').find('h1').html(source.Title)
       $('#popUp').find('.year').html(source.Year)
+      $('#main').css("display","none")
     }
 
     $scope.closePopUp = function(source) {
       $('#popUp').addClass("hidden")
+      $('body').css("overflow","auto")
+      $("#main").css("display","block")
     }
  
   //make initial api call to poplate page
